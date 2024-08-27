@@ -23,8 +23,4 @@ def process(url, path, msg):
     push(path, msg)
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    path = sys.argv[2]
-    msg = sys.argv[3]
-
-    process(url, path, msg)
+    process(*sys.argv[1:4])
